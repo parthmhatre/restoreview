@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="//getbootstrap.com/favicon.ico">
+
+    <title>Create User</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <main class="col-lg-8 col-sm-12  col-md-8  col-lg-offset-2 col-md-offset-2">
+      <h1>Create User</h1>
+        <form data-toggle="validator" role="form" method="post" action="/RestoReview/CreateUser">
+          <div class="form-group">
+            <label for="inputName" class="control-label">Name</label>
+            <input type="text" class="form-control" name="inputName" id="inputName" placeholder="Cina Saffary" required>
+          </div>
+          <div class="form-group">
+            <label for="inputUsername" class="control-label">Username</label>
+            <input type="text" class="form-control" name="inputUsername" id="inputUsername" placeholder="Cina.S" required>
+          </div>
+          <div class="form-group">
+            <label for="inputEmail" class="control-label">Email</label>
+            <input type="email" class="form-control" name="inputEmail" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword" class="control-label">Password</label>
+            <div class="form-inline row">
+              <div class="form-group col-sm-6">
+                <input type="password" data-minlength="6" class="form-control" name="inputPassword" id="inputPassword" placeholder="Password" required>
+                <div class="help-block">Minimum of 6 characters</div>
+              </div>
+              <div class="form-group col-sm-6">
+                <input type="password" class="form-control" name="inputPasswordConfirm" id="inputPasswordConfirm" data-match="#inputPassword" data-match-error="Whoops, these don't match" placeholder="Confirm" required>
+                <div class="help-block with-errors"></div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </main>
+
+     </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="//getbootstrap.com/js/jquery-3.1.1.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="//getbootstrap.com/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="//getbootstrap.com/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="//getbootstrap.com/favicon.ico">
+
+    <title>Create Restaurant</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <main class="col-lg-8 col-sm-12  col-md-8  col-lg-offset-2 col-md-offset-2">
+      <h1>Add Restaurant</h1>
+        <form data-toggle="validator" role="form" method="post" action="/RestoReview/CreateResto" >
+          <div class="form-group">
+            <label for="inputRestaurantName" class="control-label">Restaurant Name</label>
+            <input type="text" class="form-control" name="inputRestaurantName" id="inputRestaurantName" placeholder="McDonalds" required>
+          </div>
+          <div class="form-group">
+            <label for="inputAddress" class="control-label">Address</label>
+            <input type="text" class="form-control" name="inputAddress" id="inputAddress" placeholder="Lancaster" required>
+          </div>
+          <div class="form-group">
+            <label for="inputPincode" class="control-label">Pincode</label>
+            <input type="text" class="form-control" name="inputPincode" id="inputPincode" placeholder="19104" required>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="inputOwner" id="inputOwner" placeholder="Owner's Name" required>
+          </div>
+          <div class="form-group">
+            <label for="inputContactNumber" class="control-label">Contact Number</label>
+            <input type="text" class="form-control" name="inputContactNumber" id="inputContactNumber" placeholder="4434543929" required>
+          </div>
+          <div class="form-group">
+            <select class="form-control" name="CuisineType1" id="CuisineType1"> 
+              <option value="0">Select a Cuisine</option>
+              <option value="1">American</option>
+              <option value="2">Italian</option>
+              <option value="3">Mexican</option>
+              <option value="4">Indian</option>
+              <option value="5">Chinese</option>
+              <option value="6">Thai</option>
+              <option value="7">Malaysian</option>
+              <option value="8">French</option>
+              <option value="9">Greek</option>
+              <option value="10">Japanese</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </main>
+
+     </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="//getbootstrap.com/js/jquery-3.1.1.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="//getbootstrap.com/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="//getbootstrap.com/js/bootstrap.min.js"></script>
+  </body>
+</html>

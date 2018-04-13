@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>RestaurantReview</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <servlet-class>MyFirstServlet.MyFirstServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MyFirstServlet</servlet-name>
+    <url-pattern>/MyFirstServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateUser</servlet-name>
+    <servlet-class>CreateUser.CreateUser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateUser</servlet-name>
+    <url-pattern>/CreateUser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>CreateResto</servlet-name>
+    <servlet-class>CreateResto.CreateResto</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreateResto</servlet-name>
+    <url-pattern>/CreateResto</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Search</servlet-name>
+    <servlet-class>Search.Search</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Search</servlet-name>
+    <url-pattern>/Search</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>rate</servlet-name>
+    <servlet-class>rate.rate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>rate</servlet-name>
+    <url-pattern>/rate</url-pattern>
+  </servlet-mapping>
+</web-app>
